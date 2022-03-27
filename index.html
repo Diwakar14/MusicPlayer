@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <!-- <div class="wrapper" id="wrapper"> -->
+    <div class="audio-box">
+        <div class="audio-header" id="title">Title of the Music</div>
+        <div class="artistAlbum" id="artistAlbum"></div>
+        <div class="thumb">
+            <div class="img" id="thumb"></div>
+            <div class="loader">
+                <img src="img/loader.gif" alt="" width="50px">
+            </div>
+        </div>
+
+        <div class="timeupdate">
+            <div class="currentTime" id="currentTime">00:00</div>
+            <div class="totalTime" id="totalTime">00:00</div>
+        </div>
+        <div class="visualizer">
+            <canvas id="visualizerCanvas"></canvas>
+        </div>
+        <div class="slider" id="slider">
+            <input type="range" id="progress" max="100" min="0" value="0" step="0.1">
+        </div>
+        <div class="audio-controls">
+            <div class="volume" id="volume"><i class="ion-android-volume-up" id="volumeId"></i></div>
+            <div class="suffle" id="suffle"><i class="ion-ios-shuffle-strong"></i></div>
+            <div class="prev" id="prev"><i class="ion-chevron-left"></i></div>
+            <div class="play" id="play"><i class="ion-ios-play" id="playId"></i></div>
+            <div class="next" id="next"><i class="ion-chevron-right"></i></div>
+            <div class="repeat" id="repeat" title="Repeat All"><i class="ion-ios-infinite" id="repeatId"></i></div>
+            <div class="playlist" id="playlist"><i class="ion-android-list"></i></div>
+        </div>
+        <div class="playlist-item"></div>
+        <!-- </div> -->
+
+
+    </div>
+    <script src="jquery.js"></script>
+    <script src="musicmetadata.js"></script>
+    <script src="script.js"></script>
+    <script src="rgbaster.min.js"></script>
+    <!-- <script src="color-thief.min.js"></script> -->
+</body>
+
+
+
+</html>
